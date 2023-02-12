@@ -31,6 +31,8 @@
 			bucket: process.env.AWS_S3_BUCKET, // The bucket you want to save into
 		}
 	}
+	
+	console.log(gunConfig);
 
 	var gun = Gun(gunConfig);
 
