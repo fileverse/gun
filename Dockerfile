@@ -1,5 +1,5 @@
 # install packages
-FROM node:lts-alpine as builder
+FROM node:lts-alpine AS builder
 RUN mkdir /work
 WORKDIR /work
 RUN apk add --no-cache alpine-sdk python3
