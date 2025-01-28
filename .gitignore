@@ -19,3 +19,5 @@ isolate*.log
 !/types/**/*.test-d.ts
 /gun.ts
 /temp/
+*.env
+.env

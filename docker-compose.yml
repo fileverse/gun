@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  gun:
+    env_file: "production.env"
+    build: .
+    ports:
+      - "8765:8765"
+      - "8080:8080"
+    environment:
+      - PORT=8765
+    volumes:
+      - gun-data:/work/data
+    restart: unless-stopped
+
+volumes:
+  gun-data:
